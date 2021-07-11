@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="4dp"
+    android:background="@drawable/category_bg">
+
+    <TextView
+    android:id="@+id/question"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:padding="8dp"
+    android:text="quesion"
+        android:textColor="#000000"
+    />
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="answer"
+        android:textColor="#000000"
+        />
+    
+    <ImageButton
+        android:id="@+id/delete_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/delete"
+        android:padding="8dp"
+        android:background="@android:color/transparent"
+        />
+
+</LinearLayout>

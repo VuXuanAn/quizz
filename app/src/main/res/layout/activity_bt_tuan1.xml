@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myRelativeLayout"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="#1abc9c"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblUserName"
+        android:background="#1abc9c"
+        android:text="Enter Your Name"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+    </TextView>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editUserName"
+        android:layout_below="@+id/lblUserName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/myRelativeLayout"
+        android:padding="20dip"
+        tools:ignore="NotSibling"
+        android:background="@color/colorAccent"
+        android:layout_margin="20dp">
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGo"
+        android:layout_below="@+id/editUserName"
+        android:layout_alignRight="@+id/editUserName"
+        android:text="Go"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/colorAccent"
+
+        ></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCancel"
+        android:layout_below="@+id/editUserName"
+        android:layout_toLeftOf="@+id/btnGo"
+        android:text="Cancel"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/colorAccent"
+        ></Button>
+
+
+</RelativeLayout>
